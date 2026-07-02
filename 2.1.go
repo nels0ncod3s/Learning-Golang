@@ -2,13 +2,12 @@ package main
 
 import (
     "fmt"
-    //"math/rand"
+    "math/rand"
 )
 
 //Number Guessing Game
 func main() {
     var choice int //storing user's input
-    //guessNum := rand.Intn(10) + 1
 
     fmt.Println("### Welcome to the Number Guessing Game ###")
     fmt.Print("")
@@ -20,11 +19,31 @@ func main() {
     //conditional logic
     if choice == 1{
         fmt.Println("You have chosen Easy!")
-    } else if choice == 2{
-        fmt.Println("You have chosen Medium!")
-    } else if choice == 3{
-        fmt.Println("You have chosen Hard!")
-    } else{
-        fmt.Println("You have made an invalid selection!")
-    }
+        attempt := 5
+        radnum := rand.Intn(10) + 1
+        var userChoice int
+        for i := 0; i < attempt; i++{
+            if userChoice == randnum {
+                fmt.Println("You guessed the magic number, it was %d", randnum)
+                break //To stop the loop when you win 
+            } else {
+                fmt.Println("Keep Trying!")
+            }
+        }
+    } 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
