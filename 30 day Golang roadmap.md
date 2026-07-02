@@ -25,7 +25,7 @@
 **Build (120 min):**
 - Temperature converter (Celsius ↔ Fahrenheit ↔ Kelvin)
 - Simple CLI calculator with `flag` package for arguments
-- **Commit:** Working calculator to GitHub
+- **Commit:** to GitHub
 
 **Review (30 min):**
 - Read [Effective Go](https://go.dev/doc/effective_go) — first 3 sections
