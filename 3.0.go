@@ -15,6 +15,12 @@ func reverse(word string) string {
     return reversed
 }
 
+func isPalindrome(word string) bool {
+    reversed := reverse(word)
+
+    return word == reversed
+}
+
 func main (){
     var word string
 
